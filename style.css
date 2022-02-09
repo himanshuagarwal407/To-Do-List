@@ -1,0 +1,125 @@
+body{
+    background-color: aqua;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.todo-wrapper{
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: bisque;
+    border-radius: 30px;
+    padding: 30px;
+    font-weight: 1000;
+    font-size: large;
+}
+
+.todo-wrapper h2{
+    margin: 0;
+}
+
+.todo-wrapper p{
+    font-style: italic;
+    color: black;
+    margin: 5px 0;
+}
+
+.todo-wrapper .pretty-button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.todo-wrapper .pretty-button{
+    padding: 8px 15px;
+    border-radius: 10px;
+    border-color: aquamarine;
+    text-align: center;
+    font-size: medium;
+    display: inline;
+}
+
+.todo-wrapper input{
+    /* margin-left: 2px; */
+    /* margin-right: 18px; */
+    border-radius: 10px;
+    border-color: aquamarine;
+    padding: 8px 10px;
+    font-size: medium;
+    width: 90%;
+}
+
+.todo-wrapper form{
+    display: inline-block;
+}
+
+#control-wrapper{
+    /* margin-top: 5px; */
+    /* text-align: center; */
+    display: inline;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+}
+
+#clear-completed-button{
+    background-color: #78f578;
+}
+
+#save-button{
+    margin-top: 5px;
+    background-color: rgb(98, 198, 238);
+}
+
+#empty-button{
+    margin-top: 5px;
+    background-color: rgb(243, 160, 160);
+}
+
+#add-button{
+    margin-top: 5px;
+    background-color: rgb(226, 241, 89);
+}
+
+@media only screen and (min-width: 1400px){
+    .todo-wrapper{
+        width: 50%;
+    }
+
+    .todo-wrapper{
+        width: 600px;
+    }
+}
+
+/* @media only screen and (max-width: 1399px) and (min-width: 750px){
+    .todo-wrapper{
+        width: 75%;
+    }
+
+    .todo-wrapper input{
+        width: 300px;
+    }
+} */
+
+ol{
+    margin: 20ox 0;
+}
+
+ol li{
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+ol li:nth-child(even){
+    background: #ddd;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #666;
+}
+
